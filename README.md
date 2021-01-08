@@ -5,11 +5,9 @@ Home: http://www.pandapower.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandapower-feedstock/blob/master/LICENSE.txt)
 
 Summary: An easy to use open source tool for power system modeling, analysis and optimization with a high degree of automation.
-
-
 
 Current build status
 ====================
