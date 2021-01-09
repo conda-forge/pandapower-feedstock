@@ -22,7 +22,9 @@ requirements:
   run:
     - cryptography
     - networkx
+    - numba
     - numpy >=0.11
+    - openpyxl
     - packaging
     - pandas >=0.17
     - python
