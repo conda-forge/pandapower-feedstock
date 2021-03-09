@@ -1,5 +1,5 @@
 {% set name = "pandapower" %}
-{% set version = "2.5.0" %}
+{% set version = "2.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pandapower-{{ version }}.zip
-  sha256: 5a1f8b4decb3d00ed9a82262a496bbf107cf546e758154b299dbf43fe4d04db9
+  sha256: 02e0e7a203a4e10323b8b6556d3e5c4bf1995a00b749f47b8da53d1e984b0eea
 
 build:
   number: 0
@@ -18,8 +18,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
+    - python >=3.6
     - cryptography
     - networkx
     - numba
