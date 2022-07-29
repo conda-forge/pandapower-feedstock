@@ -1,5 +1,5 @@
 {% set name = "pandapower" %}
-{% set version = "2.8.0" %}
+{% set version = "2.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pandapower-{{ version }}.zip
-  sha256: 75f8a2fa8c5a7f46b6f75ef320fb37f5e2c200a585cf09a5f352c64a88e6d7c7
+  sha256: 5c088d47ab798dfe115c566fea5049f93d67f8e30f2265f755ff3968c83695f5
 
 build:
   number: 0
