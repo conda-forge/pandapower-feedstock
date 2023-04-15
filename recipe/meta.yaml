@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.6
     - cryptography
+    - deepdiff
     - networkx >=2.5
     - numba
     - numpy
@@ -30,6 +31,7 @@ requirements:
     - pandas >=1.0
     - python
     - scipy
+    - tqdm
     - xlsxwriter
 
 test:
