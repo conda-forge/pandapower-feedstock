@@ -36,8 +36,8 @@ requirements:
 
 test:
   imports:
-    - pandapower
     - pandapower.control
+    - pandapower.networks
   commands:
     - pip check
   requires:
