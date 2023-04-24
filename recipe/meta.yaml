@@ -1,5 +1,5 @@
 {% set name = "pandapower" %}
-{% set version = "2.12.0" %}
+{% set version = "2.12.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pandapower-{{ version }}.zip
-  sha256: fc3ffefe00eee5c3c4a81053f80f9f2fd93ec6b47b8557fc54c4449bfbd08b0f
+  sha256: 68866d53faaeeca2fad04c02ce60ebf9b0f672c36f438b573b06a9a72cd3e443
 
 build:
   number: 0
@@ -18,26 +18,20 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
-    - cryptography
+    - python >=3.8
     - deepdiff
     - networkx >=2.5
-    - numba
     - numpy
-    - openpyxl
     - packaging
     - pandas >=1.0
-    - python
     - scipy
     - tqdm
-    - xlsxwriter
 
 test:
   imports:
-    - pandapower.control
-    - pandapower.networks
+    - pandapower
   commands:
     - pip check
   requires:
