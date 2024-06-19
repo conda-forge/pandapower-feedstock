@@ -23,7 +23,7 @@ requirements:
     - python >=3.8
     - deepdiff
     - networkx >=2.5
-    - numpy
+    - numpy <2.0
     - packaging
     - pandas >=1.0
     - scipy
