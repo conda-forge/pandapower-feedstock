@@ -1,5 +1,5 @@
 {% set name = "pandapower" %}
-{% set version = "2.14.9" %}
+{% set version = "3.0.0" %}
 
 
 package:
@@ -7,27 +7,31 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pandapower-{{ version }}.zip
-  sha256: c184eaf364f8c1da100add796c856c3df543873e5d78c6092e6d9674707cbb30
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 01d697460e0a1342f578e8751bfa0181c6fccea9322fac4b7f69298bdd6c0203
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
     - deepdiff
     - networkx >=2.5
-    - numpy <2.0
+    - numpy
     - packaging
     - pandas >=1.0
-    - scipy
+    - scipy <1.14
     - tqdm
+    - geojson
+    - lxml
+    - typing_extensions ~=4.9
 
 test:
   imports:
