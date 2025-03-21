@@ -18,16 +18,20 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
     - deepdiff
     - networkx >=2.5
-    - numpy <2.0
+    - numpy
     - packaging
     - pandas >=1.0
-    - scipy
+    - scipy <1.14
     - tqdm
+    - geojson
+    - lxml
+    - typing_extensions ~=4.9
 
 test:
   imports:
