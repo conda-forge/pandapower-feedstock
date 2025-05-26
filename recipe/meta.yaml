@@ -1,5 +1,5 @@
 {% set name = "pandapower" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 01d697460e0a1342f578e8751bfa0181c6fccea9322fac4b7f69298bdd6c0203
+  sha256: 68c6e71d5397760325532d3c66831e5b4278f1b48cdd4bec9490408867acbfe2
 
 build:
   number: 0
